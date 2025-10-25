@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Joke</title>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <img src="mag.png" alt="Magnifying Glass" id="myImage">
 
-    <input type="button" value="See the punchline!" id="myButton" onclick=""></input>
+<div id="container">
 
+    <div class="joke"></div>
+    <div id="Image" class="Image" style='background-image: url("sans-smile.png");'>&nbsp;</div>
+    
+
+    <div class="joke" id="joke">
+        
+        <span id="setup">
+        Wanna hear a joke?
+        <button class="button" id="myButton" onclick="Quest()">></button>
+        </span>
+
+        <span id="q">
+        What do skeletons say before dining?
+        <button  class="button" id="question" onclick="Punch()">></button>
+        </span>
+
+        <p id="punchline" style="display:none;">Bone-appetit</p>
+
+
+    </div>
+    <div class="joke"></div>
+</div>
 
 </body>
 </html>

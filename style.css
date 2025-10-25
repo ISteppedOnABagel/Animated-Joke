@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid;*/
+}
+
+  @font-face {
+        font-family: "UndertaleSans";
+        src: url("UndertaleSans.ttf");
+  }
+
+#container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+
+}
+
+.Image {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    flex: 1;
+    background-position: right;
+    transition: transform 0.3s ease;
+}
+
+.joke {
+    flex: 1;
+}
+
+#joke {
+    margin-left: 20px;
+    text-align: left;
+    font-family: "UndertaleSans";
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
